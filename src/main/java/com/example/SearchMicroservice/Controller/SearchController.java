@@ -15,7 +15,7 @@ public class SearchController {
     @Autowired
     SearchService searchService;
 
-    // Controller returning list of (string) ids of movies
+    // Controller returning list of ids of movies
     @PostMapping("/search")
     public List<Integer> search(@RequestBody String s){
         List<Integer> found = searchService.search(s);
